@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Uang ala Anggi</title>
+    <!-- Style Konversi Uang -->
+    <link rel="stylesheet" href="switch_case\konversi_uang.css">
+</head>
+<body>
+    <h1>Konversi Mata Uang</h1>
+
+    <label for="jumlah">Masukkan Jumlah:</label>
+    <input type="number" id="jumlah" />
+
+    <label for="dari">Dari:</label>
+    <select id="dari">
+        <option value="usd">USD (Dolar AS)</option>
+        <option value="eur">EUR (Euro)</option>
+        <option value="idr">IDR (Rupiah)</option>
+        <option value="myr">MYR (Ringgit Malaysia)</option>
+        <option value="php">PHP (Peso Filipina)</option>
+        <option value="thb">THB (Baht Thailand)</option>
+        <option value="sgd">SGD (Dollar Singapura)</option>
+    </select>
+
+    <label for="ke">Ke:</label>
+    <select id="ke">
+        <option value="usd">USD (Dolar AS)</option>
+        <option value="eur">EUR (Euro)</option>
+        <option value="idr">IDR (Rupiah)</option>
+        <option value="myr">MYR (Ringgit Malaysia)</option>
+        <option value="php">PHP (Peso Filipina)</option>
+        <option value="thb">THB (Baht Thailand)</option>
+        <option value="sgd">SGD (Dollar Singapura)</option>
+    </select>
+
+    <button onclick="konversi()">Konversi</button>
+
+    <p>Hasil: <span id="hasil"></span></p>
+    
+    <!-- Switch Case Konversi Uang -->
+    <script src="switch_case\konversi_uang.js"></script>
+</body>
+</html>

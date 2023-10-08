@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulator Anggi</title>
+        <!-- Style Kalkulator -->
+        <link rel="stylesheet" href="if_else_nestedif\kalkulator.css">
+    </head>
+    <body>
+        <h1>Kalkulator Sederhana</h1>
+
+        <label for="bilangan1">Bilangan 1:</label>
+        <input type="text" id="bilangan1" />
+
+        <br /><br />
+
+        <label for="bilangan2">Bilangan 2:</label>
+        <input type="text" id="bilangan2" />
+
+        <br /><br />
+
+        <button onclick="hitung('+')">+</button>
+        <button onclick="hitung('-')">-</button>
+        <button onclick="hitung('x')">x</button>
+        <button onclick="hitung('/')">/</button>
+
+        <br /><br />
+
+        <label for="hasil">Hasil:</label>
+        <input type="text" id="hasil" disabled/>
+
+        <script language="JavaScript">
+            document.write(
+                "Dimodifikasi terakhir pada " + document.lastModified
+            );
+        </script>
+        <!-- Script Kalkulator -->
+        <script src="if_else_nestedif\kalkulator.js"></script>
+    </body>
+</html>
